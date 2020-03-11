@@ -2,82 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df49f66c-c920-4ef2-986d-907a98f55e55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MonitorizareTemeLaboratorV02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentiTest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/DataInceput.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Studenti.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Studenti.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Teme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/Teme.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/eu.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fisiere/la.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/curent/Curent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Nota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Tema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AbstractCrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AbstractFileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/AbstractXMLRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/FileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/HasID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/NotaFileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/NotaXMLRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TemaFileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TemaXMLRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validation/NotaValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validation/StudentValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validation/TemaValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validation/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/validation/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddStudentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app/MainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/curent/Curent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/domain/Nota.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/domain/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/domain/Tema.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/HasID.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/service/Service.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/validation/Validator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/view/UI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,12 +131,24 @@
       <workItem from="1550872416616" duration="388000" />
       <workItem from="1583912832556" duration="744000" />
       <workItem from="1583913603663" duration="1974000" />
-      <workItem from="1583915877591" duration="3082000" />
+      <workItem from="1583915877591" duration="6852000" />
     </task>
+    <task id="LOCAL-00001" summary="SSVV: created maven project for lab 2 assignment">
+      <created>1583921315060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583921315060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="SSVV: created maven project for lab 2 assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="SSVV: created maven project for lab 2 assignment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#Project_Structure" timestamp="1583914570278">
@@ -225,29 +163,33 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="653" y="114" width="553" height="562" key="#xdebugger.evaluate/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917027647" />
-    <state x="-1477" y="122" key="CommitChangelistDialog2" timestamp="1583921288377">
+    <state x="-1477" y="122" key="CommitChangelistDialog2" timestamp="1583921311487">
       <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
-    <state x="-1477" y="122" key="CommitChangelistDialog2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583921288377" />
+    <state x="-1477" y="122" key="CommitChangelistDialog2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583921311486" />
     <state x="613" y="305" key="Github.ShareDialog" timestamp="1583913544905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="613" y="305" key="Github.ShareDialog/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583913544905" />
-    <state width="1493" height="404" key="GridCell.Tab.0.bottom" timestamp="1583917749815">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="532" key="GridCell.Tab.0.bottom" timestamp="1583926053571">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926053571" />
     <state width="1493" height="404" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
-    <state width="1493" height="404" key="GridCell.Tab.0.center" timestamp="1583917749815">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="532" key="GridCell.Tab.0.center" timestamp="1583926053571">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926053571" />
     <state width="1493" height="404" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
-    <state width="1493" height="404" key="GridCell.Tab.0.left" timestamp="1583917749814">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="532" key="GridCell.Tab.0.left" timestamp="1583926053571">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926053571" />
     <state width="1493" height="404" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749814" />
-    <state width="1493" height="404" key="GridCell.Tab.0.right" timestamp="1583917749815">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1877" height="532" key="GridCell.Tab.0.right" timestamp="1583926053571">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926053571" />
     <state width="1493" height="404" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583917501728">
       <screen x="0" y="0" width="1536" height="824" />
@@ -269,6 +211,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583915273891" />
+    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2" timestamp="1583921317603">
+      <screen x="-1920" y="9" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583921317603" />
     <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1583915878319">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,16 +223,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="149" width="609" height="526" key="find.popup/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917543668" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/AddStudentTest.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

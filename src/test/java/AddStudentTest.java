@@ -23,6 +23,7 @@ public class AddStudentTest {
     private int STUDENT_GROUP = 934;
     private int INVALID_STUDENT_GROUP = -32;
     private String STUDENT_EMAIL = "email@gmail.com";
+    private String STUDENT_PROFESSOR = "John";
 
     StudentValidator studentValidator = new StudentValidator();
     TemaValidator temaValidator = new TemaValidator();
@@ -54,7 +55,7 @@ public class AddStudentTest {
         int size = ((Collection<?>) students).size();
 
         String uuid = String.valueOf(UUID.randomUUID());
-        Student student = new Student(uuid, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL);
+        Student student = new Student(uuid, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
 
         service.addStudent(student);
         assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
@@ -68,7 +69,8 @@ public class AddStudentTest {
 
     @Test(expected = ValidationException.class)
     public void addStudentTestFailure() {
-        Student student = new Student("32", STUDENT_NAME, INVALID_STUDENT_GROUP, STUDENT_EMAIL);
+        Student student = new Student("32", STUDENT_NAME, INVALID_STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
+
 }

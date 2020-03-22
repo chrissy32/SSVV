@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><inbox><student idStudent="9cabb2bf-0877-4b8e-8ed1-a752b80be4c1"><nume>Student</nume><grupa>934</grupa><email>email@gmail.com</email></student><student idStudent="d5682f49-ae70-445f-abca-9b7e859b2f17"><nume>Student</nume><grupa>934</grupa><email>email@gmail.com</email></student><student idStudent="6deb0f4f-f19b-4f91-9ba7-1bce4d37da68"><nume>Student</nume><grupa>934</grupa><email>email@gmail.com</email></student></inbox>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inbox>
+    <student idStudent="1">
+        <nume>a</nume>
+        <grupa>1</grupa>
+        <email>a</email>
+        <profesor>John</profesor>
+    </student>
+    <student idStudent="1003">
+        <nume>Mihai</nume>
+        <grupa>221</grupa>
+        <email>Mihai@yahoo.com</email>
+        <profesor>John</profesor>
+    </student>
+    <student idStudent="1002">
+        <nume>Dia</nume>
+        <grupa>224</grupa>
+        <email>dia@yahoo.com</email>
+        <profesor>John</profesor>
+    </student>
+    <student idStudent="9b3a43f6-af05-4bec-803f-941dccb497ee">
+        <nume>Student</nume>
+        <grupa>934</grupa>
+        <email>email@gmail.com</email>
+        <profesor>John</profesor>
+    </student>
+    <student idStudent="1001">
+        <nume>Arina</nume>
+        <grupa>222</grupa>
+        <email>arina@yahoo.com</email>
+        <profesor>John</profesor>
+    </student>
+</inbox>

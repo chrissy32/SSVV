@@ -1,47 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df49f66c-c920-4ef2-986d-907a98f55e55" name="Default Changelist" comment="SSVV: modified versions in pom">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="df49f66c-c920-4ef2-986d-907a98f55e55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddAssignmentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MonitorizareTemeLaboratorV02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MonitorizareTemeLaboratorV02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudentiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisiere/Studenti.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Studenti.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fisiere/Studenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Studenti.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validation/StudentValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validation/StudentValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AddStudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddStudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/MainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/curent/Curent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/curent/Curent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Nota.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Nota.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/domain/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/Tema.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Tema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractCrudRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/AbstractXMLRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/CrudRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/FileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/HasID.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/HasID.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/NotaXMLRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentFileRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentXMLRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TemaXMLRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/NotaValidator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/StudentValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/TemaValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/ValidationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/validation/Validator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/validation/Validator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/UI.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,110 +28,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/validation/StudentValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/domain/Student.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-775">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-              <folding>
-                <element signature="e#2027#2028#0" expanded="true" />
-                <element signature="e#2063#2064#0" expanded="true" />
-                <element signature="e#2121#2122#0" expanded="true" />
-                <element signature="e#2171#2172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/UI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="170" column="75" selection-start-line="170" selection-start-column="75" selection-end-line="170" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-              <folding>
-                <element signature="e#335#336#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/repository/AbstractXMLRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fisiere/Studenti.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" column="20" selection-end-line="26" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StudentiTest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AddStudentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -174,21 +37,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/fisiere/Studenti.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/UI.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AddStudentTest.java" />
-        <option value="$PROJECT_DIR$/fisiere/Studenti.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java" />
-        <option value="$PROJECT_DIR$/StudentiTest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/domain/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/validation/StudentValidator.java" />
-      </list>
-    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -204,84 +53,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
-  </component>
   <component name="ProjectId" id="1YyRQS1dj8mbo1iHjPjuvyMNryx" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="fisiere" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSVV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSVV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -292,8 +64,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584895400830" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550872803614" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -304,19 +76,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.AddStudentTest">
+  <component name="RunManager" selected="JUnit.AddAssignmentTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="app.MainApplication" />
       <module name="MonitorizareTemeLaboratorV02" />
@@ -326,21 +86,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddAssignmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MonitorizareTemeLaboratorV02" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddStudentTest" />
+      <option name="MAIN_CLASS_NAME" value="AddAssignmentTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddStudentTest.addStudentTestFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MonitorizareTemeLaboratorV02" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddStudentTest" />
-      <option name="METHOD_NAME" value="addStudentTestFailure" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -355,10 +114,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddAssignmentTest" />
         <item itemvalue="JUnit.AddStudentTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.AddStudentTest.addStudentTestFailure" />
         <item itemvalue="JUnit.All in MonitorizareTemeLaboratorV02" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -387,9 +146,8 @@
       <workItem from="1550872416616" duration="388000" />
       <workItem from="1583912832556" duration="744000" />
       <workItem from="1583913603663" duration="1974000" />
-      <workItem from="1583915877591" duration="7104000" />
-      <workItem from="1584794580042" duration="4962000" />
-      <workItem from="1584893297604" duration="2068000" />
+      <workItem from="1583915877591" duration="7713000" />
+      <workItem from="1585128869408" duration="1472000" />
     </task>
     <task id="LOCAL-00001" summary="SSVV: created maven project for lab 2 assignment">
       <created>1583921315060</created>
@@ -405,69 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1583926066973</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SSVV: modified versions in pom">
+      <created>1583926304545</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583926304545</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="AddStudentTest_addStudentTestFailure - 2020.03.22 at 18h 28m 10s.xml">
-      <configuration name="AddStudentTest.addStudentTestFailure" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest_addStudentTestFailure - 2020.03.22 at 18h 28m 25s.xml">
-      <configuration name="AddStudentTest.addStudentTestFailure" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest_addStudentTestFailure - 2020.03.22 at 18h 35m 17s.xml">
-      <configuration name="AddStudentTest.addStudentTestFailure" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest - 2020.03.22 at 18h 38m 02s.xml">
-      <configuration name="AddStudentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest - 2020.03.22 at 18h 38m 59s.xml">
-      <configuration name="AddStudentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest - 2020.03.22 at 18h 39m 22s.xml">
-      <configuration name="AddStudentTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AddStudentTest - 2020.03.22 at 18h 40m 38s.xml">
-      <configuration name="AddStudentTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7030000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.347651" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.39943343" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -475,7 +179,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SSVV: created maven project for lab 2 assignment" />
     <MESSAGE value="SSVV: modified version of junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSVV: modified version of junit" />
+    <MESSAGE value="SSVV: modified versions in pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="SSVV: modified versions in pom" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="70" key="#Project_Structure" timestamp="1583914570278">
@@ -490,10 +195,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="653" y="114" width="553" height="562" key="#xdebugger.evaluate/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917027647" />
-    <state x="-1477" y="122" key="CommitChangelistDialog2" timestamp="1583926292197">
+    <state x="-1477" y="122" key="CommitChangelistDialog2" timestamp="1583926303247">
       <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
-    <state x="-1477" y="122" key="CommitChangelistDialog2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926292197" />
+    <state x="-1477" y="122" key="CommitChangelistDialog2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926303247" />
     <state x="-1582" y="180" key="DiffContextDialog" timestamp="1583926291527">
       <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
@@ -502,193 +207,75 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="613" y="305" key="Github.ShareDialog/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583913544905" />
-    <state width="1877" height="532" key="GridCell.Tab.0.bottom" timestamp="1583926258986">
-      <screen x="-1920" y="9" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="532" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926258986" />
-    <state width="1493" height="404" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
-    <state width="1877" height="532" key="GridCell.Tab.0.center" timestamp="1583926258986">
-      <screen x="-1920" y="9" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="532" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926258986" />
-    <state width="1493" height="404" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
-    <state width="1877" height="532" key="GridCell.Tab.0.left" timestamp="1583926258985">
-      <screen x="-1920" y="9" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="532" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926258985" />
-    <state width="1493" height="404" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749814" />
-    <state width="1877" height="532" key="GridCell.Tab.0.right" timestamp="1583926258986">
-      <screen x="-1920" y="9" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="532" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926258986" />
-    <state width="1493" height="404" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917749815" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583917501728">
+    <state width="1493" height="403" key="GridCell.Tab.0.bottom" timestamp="1585132587267">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585129004139" />
+    <state width="1493" height="403" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1585132587267" />
+    <state width="1493" height="403" key="GridCell.Tab.0.center" timestamp="1585132587267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585129004138" />
+    <state width="1493" height="403" key="GridCell.Tab.0.center/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1585132587267" />
+    <state width="1493" height="403" key="GridCell.Tab.0.left" timestamp="1585132587266">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585129004138" />
+    <state width="1493" height="403" key="GridCell.Tab.0.left/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1585132587266" />
+    <state width="1493" height="403" key="GridCell.Tab.0.right" timestamp="1585132587267">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1877" height="532" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585129004138" />
+    <state width="1493" height="403" key="GridCell.Tab.0.right/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1585132587267" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1583926906366">
+      <screen x="-1920" y="9" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926906366" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917501728" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1583917501728">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1583926906366">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926906366" />
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917501728" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1583917501728">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1583926906366">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926906366" />
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917501728" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1583917501728">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1583926906366">
+      <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926906366" />
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917501728" />
+    <state x="-1582" y="181" key="MergeDialog" timestamp="1585128911844">
+      <screen x="-1920" y="9" width="1920" height="1040" />
+    </state>
+    <state x="-1582" y="181" key="MergeDialog/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585128911844" />
+    <state x="-1248" y="244" key="MultipleFileMergeDialog" timestamp="1585128911865">
+      <screen x="-1920" y="9" width="1920" height="1040" />
+    </state>
+    <state x="-1248" y="244" key="MultipleFileMergeDialog/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585128911865" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1583915273891">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="0" key="SettingsEditor/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583915273891" />
-    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2" timestamp="1583926068144">
+    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2" timestamp="1583926306209">
       <screen x="-1920" y="9" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926068144" />
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1583915878319">
+    <state x="-1368" y="261" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1583926306209" />
+    <state x="-1339" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1585128877657">
+      <screen x="-1920" y="9" width="1920" height="1040" />
+    </state>
+    <state x="-1339" y="306" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585128877657" />
+    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583915878319" />
+    <state x="615" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585132619268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583915878319" />
+    <state x="-1151" y="445" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.9.1920.1040@-1920.9.1920.1040" timestamp="1585128881156" />
+    <state x="615" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1585132619268" />
     <state x="463" y="149" width="609" height="526" key="find.popup" timestamp="1583917543668">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="463" y="149" width="609" height="526" key="find.popup/0.0.1536.824/-1920.9.1920.1040@0.0.1536.824" timestamp="1583917543668" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>String nameProfessor = element.getElementsByTagName(&quot;profesor&quot;)
-                .item(0)
-                .getTextContent();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AbstractCrudRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/validation/ValidationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fisiere/Studenti.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/FileRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/UI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="170" column="75" selection-start-line="170" selection-start-column="75" selection-end-line="170" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AbstractXMLRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AddStudentTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/StudentFileRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/StudentXMLRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fisiere/Studenti.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="20" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentiTest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-775">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#2027#2028#0" expanded="true" />
-            <element signature="e#2063#2064#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2171#2172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/validation/StudentValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

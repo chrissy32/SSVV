@@ -2,6 +2,7 @@ import domain.Tema;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
 import repository.NotaXMLRepo;
 import repository.StudentXMLRepo;
@@ -14,14 +15,14 @@ import validation.ValidationException;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.UUID;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class AddAssignmentTest {
-    private String ASSIGNMENT_DESCRIPTION = "Tema";
-    private int ASSIGNMENT_PRIMIRE = 5;
-    private int ASSIGNMENT_DEADLINE = 12;
+    private String ASSIGNMENT_ID = "1";
+    private String ASSIGNMENT_DESCRIPTION = "Implement f1";
+    private int ASSIGNMENT_PRIMIRE = 1;
+    private int ASSIGNMENT_DEADLINE = 2;
 
     StudentValidator studentValidator = new StudentValidator();
     TemaValidator temaValidator = new TemaValidator();
@@ -33,6 +34,9 @@ public class AddAssignmentTest {
 
     @Rule
     public TemporaryFolder temporaryFolder = new TemporaryFolder();
+
+    @Rule
+    public ExpectedException exceptionRule = ExpectedException.none();
 
     @Before
     public void setup() throws IOException {
@@ -47,27 +51,66 @@ public class AddAssignmentTest {
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
     }
 
+    // TC 1
     @Test
     public void addAssignmentTestSuccess() {
+        temaXMLRepository.delete(ASSIGNMENT_ID);
         Iterable<Tema> assignments = temaXMLRepository.findAll();
         int size = ((Collection<?>) assignments).size();
 
-        String uuid = String.valueOf(UUID.randomUUID());
-        Tema assignment = new Tema(uuid, ASSIGNMENT_DESCRIPTION, ASSIGNMENT_DEADLINE, ASSIGNMENT_PRIMIRE);
-
-        service.addTema(assignment);
+        Tema assignment = new Tema(ASSIGNMENT_ID, ASSIGNMENT_DESCRIPTION, ASSIGNMENT_DEADLINE, ASSIGNMENT_PRIMIRE);
+        Tema potentiallyAddedAssignment = service.addTema(assignment);
+        assertNull(potentiallyAddedAssignment);
         assertEquals(size + 1, ((Collection<?>) temaXMLRepository.findAll()).size());
 
-        Tema addedAssignment = temaXMLRepository.findOne(uuid);
-        assertEquals(uuid, addedAssignment.getID());
+        Tema addedAssignment = temaXMLRepository.findOne(ASSIGNMENT_ID);
+        assertEquals(ASSIGNMENT_ID, addedAssignment.getID());
         assertEquals(ASSIGNMENT_DESCRIPTION, addedAssignment.getDescriere());
         assertEquals(ASSIGNMENT_DEADLINE, addedAssignment.getDeadline());
         assertEquals(ASSIGNMENT_PRIMIRE, addedAssignment.getPrimire());
     }
 
-    @Test(expected = ValidationException.class)
+    // TC 2
+    @Test
     public void addAssignmentTestFailure() {
-        Tema assignment = new Tema("32", ASSIGNMENT_DESCRIPTION, 32, ASSIGNMENT_PRIMIRE);
+        Tema assignment = new Tema(ASSIGNMENT_ID, ASSIGNMENT_DESCRIPTION, ASSIGNMENT_DEADLINE, ASSIGNMENT_PRIMIRE);
+        Tema potentiallyAddedAssignment = service.addTema(assignment);
+        assertNotNull(potentiallyAddedAssignment);
+    }
+
+    // TC 3
+    @Test
+    public void addAssignmentEmptyIdTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Numar tema invalid!");
+        Tema assignment = new Tema("", ASSIGNMENT_DESCRIPTION, ASSIGNMENT_DEADLINE, ASSIGNMENT_PRIMIRE);
+        service.addTema(assignment);
+    }
+
+    // TC 4
+    @Test
+    public void addAssignmentEmptyDescriptionTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Descriere invalida!");
+        Tema assignment = new Tema(ASSIGNMENT_ID, "", ASSIGNMENT_DEADLINE, ASSIGNMENT_PRIMIRE);
+        service.addTema(assignment);
+    }
+
+    // TC 5
+    @Test
+    public void addAssignmentInvalidDeadlineTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Deadlineul trebuie sa fie intre 1-14.");
+        Tema assignment = new Tema(ASSIGNMENT_ID, ASSIGNMENT_DESCRIPTION, -2, ASSIGNMENT_PRIMIRE);
+        service.addTema(assignment);
+    }
+
+    // TC 6
+    @Test
+    public void addAssignmentInvalidPrimireTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Saptamana primirii trebuie sa fie intre 1-14.");
+        Tema assignment = new Tema(ASSIGNMENT_ID, ASSIGNMENT_DESCRIPTION, ASSIGNMENT_DEADLINE, -1);
         service.addTema(assignment);
     }
 }

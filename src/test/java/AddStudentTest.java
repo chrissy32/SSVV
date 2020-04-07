@@ -206,7 +206,7 @@ public class AddStudentTest {
 
     // TC 2
     @Test
-    public void addStudentGroupMAXINTTestFailure() {
+    public void addStudentGroupMAXINTTestSuccess() {
         int size = getStudentRepositorySize();
         Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT, STUDENT_EMAIL, STUDENT_PROFESSOR);
         Student potentiallyAddedStudent = service.addStudent(student);
@@ -232,7 +232,7 @@ public class AddStudentTest {
 
     // TC 4
     @Test
-    public void addStudentGroup1TestFailure() {
+    public void addStudentGroup1TestSuccess() {
         int size = getStudentRepositorySize();
         Student student = new Student(STUDENT_ID, STUDENT_NAME, 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
         Student potentiallyAddedStudent = service.addStudent(student);
@@ -249,7 +249,7 @@ public class AddStudentTest {
 
     // TC 5
     @Test
-    public void addStudentGroupMAXINTMinus1TestFailure() {
+    public void addStudentGroupMAXINTMinus1TestSuccess() {
         int size = getStudentRepositorySize();
         Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT - 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
         Student potentiallyAddedStudent = service.addStudent(student);
@@ -272,7 +272,7 @@ public class AddStudentTest {
         Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT + 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
-    
+
     int getStudentRepositorySize() {
         studentXMLRepository.delete(STUDENT_ID);
         Iterable<Student> students = studentXMLRepository.findAll();

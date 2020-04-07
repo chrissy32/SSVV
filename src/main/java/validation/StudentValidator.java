@@ -12,17 +12,9 @@ public class StudentValidator implements Validator<Student> {
      */
     @Override
     public void validate(Student entity) throws ValidationException {
-        if (entity.getID().equals("")) {
-            throw new ValidationException("Id incorect!");
-        }
+        // ERRORS IDENTIFIED & CORRECTED - MISSING VALIDATIONS & WRONG ORDER OF NULL CHECKS
         if (entity.getID() == null) {
             throw new ValidationException("Id incorect!");
-        }
-        if (entity.getNume() == "") {
-            throw new ValidationException("Nume incorect!");
-        }
-        if (entity.getGrupa() < 0) {
-            throw new ValidationException("Grupa incorecta!");
         }
         if (entity.getEmail() == null) {
             throw new ValidationException("Email incorect!");
@@ -30,10 +22,18 @@ public class StudentValidator implements Validator<Student> {
         if (entity.getNume() == null) {
             throw new ValidationException("Nume incorect!");
         }
+        if (entity.getProfessor() == null) {
+            throw new ValidationException("Nume profesor incorect!");
+        }
+        if (entity.getNume().equals("")) {
+            throw new ValidationException("Nume incorect!");
+        }
+        if (entity.getGrupa() < 0) {
+            throw new ValidationException("Grupa incorecta!");
+        }
         if (entity.getEmail().equals("")) {
             throw new ValidationException("Email incorect!");
         }
-        // new validations
         if (!entity.getNume().matches("[a-zA-Z ]+")) {
             throw new ValidationException("Nume incorect!");
         }
@@ -46,8 +46,8 @@ public class StudentValidator implements Validator<Student> {
         if (entity.getProfessor().equals("")) {
             throw new ValidationException("Nume profesor incorect!");
         }
-        if (entity.getProfessor() == null) {
-            throw new ValidationException("Nume profesor incorect!");
+        if (entity.getID().equals("")) {
+            throw new ValidationException("Id incorect!");
         }
     }
 }

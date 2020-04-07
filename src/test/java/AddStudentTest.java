@@ -2,6 +2,7 @@ import domain.Student;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.junit.rules.TemporaryFolder;
 import repository.NotaXMLRepo;
 import repository.StudentXMLRepo;
@@ -14,16 +15,22 @@ import validation.ValidationException;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.UUID;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class AddStudentTest {
-    private String STUDENT_NAME = "Student";
+    private String STUDENT_ID = "1";
+    private String INVALID_STUDENT_ID = "";
+    private String STUDENT_NAME = "Ana";
+    private String INVALID_STUDENT_NAME = "Ana12";
     private int STUDENT_GROUP = 934;
     private int INVALID_STUDENT_GROUP = -32;
-    private String STUDENT_EMAIL = "email@gmail.com";
+    private String STUDENT_EMAIL = "ana@gmail.com";
+    private String INVALID_STUDENT_EMAIL = "ana";
     private String STUDENT_PROFESSOR = "John";
+    private String INVALID_STUDENT_PROFESSOR = "John12";
+    private int MAX_INT = Integer.MAX_VALUE;
 
     StudentValidator studentValidator = new StudentValidator();
     TemaValidator temaValidator = new TemaValidator();
@@ -35,6 +42,9 @@ public class AddStudentTest {
 
     @Rule
     public TemporaryFolder temporaryFolder = new TemporaryFolder();
+
+    @Rule
+    public ExpectedException exceptionRule = ExpectedException.none();
 
     @Before
     public void setup() throws IOException {
@@ -49,28 +59,223 @@ public class AddStudentTest {
         service = new Service(studentXMLRepository, studentValidator, temaXMLRepository, temaValidator, notaXMLRepository, notaValidator);
     }
 
+    // EQUIVALENCE CLASS TEST CASES
+    // TC 1
     @Test
     public void addStudentTestSuccess() {
-        Iterable<Student> students = studentXMLRepository.findAll();
-        int size = ((Collection<?>) students).size();
+        int size = getStudentRepositorySize();
 
-        String uuid = String.valueOf(UUID.randomUUID());
-        Student student = new Student(uuid, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
-
-        service.addStudent(student);
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        Student potentiallyAddedStudent = service.addStudent(student);
+        assertNull(potentiallyAddedStudent);
         assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
 
-        Student addedStudent = studentXMLRepository.findOne(uuid);
-        assertEquals(uuid, addedStudent.getID());
+        Student addedStudent = studentXMLRepository.findOne(STUDENT_ID);
+        assertEquals(STUDENT_ID, addedStudent.getID());
         assertEquals(STUDENT_NAME, addedStudent.getNume());
         assertEquals(STUDENT_GROUP, addedStudent.getGrupa());
         assertEquals(STUDENT_EMAIL, addedStudent.getEmail());
+        assertEquals(STUDENT_PROFESSOR, addedStudent.getProfessor());
     }
 
-    @Test(expected = ValidationException.class)
+    // TC 2
+    @Test
     public void addStudentTestFailure() {
-        Student student = new Student("32", STUDENT_NAME, INVALID_STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Grupa incorecta!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, INVALID_STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
 
+    // TC 3
+    @Test
+    public void addStudentEmptyIdTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Id incorect!");
+        Student student = new Student(INVALID_STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 4
+    @Test
+    public void addStudentNullIdTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Id incorect!");
+        Student student = new Student(null, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 5
+    @Test
+    public void addStudentEmptyNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume incorect!");
+        Student student = new Student(STUDENT_ID, INVALID_STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 6
+    @Test
+    public void addStudentNullNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume incorect!");
+        Student student = new Student(STUDENT_ID, null, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 7
+    @Test
+    public void addStudentInvalidNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume incorect!");
+        Student student = new Student(STUDENT_ID, INVALID_STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 8
+    @Test
+    public void addStudentEmptyEmailTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Email incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, "", STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 9
+    @Test
+    public void addStudentNullEmailTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Email incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, null, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 10
+    @Test
+    public void addStudentInvalidEmailTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Email incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, INVALID_STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 11
+    @Test
+    public void addStudentEmptyProfessorNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume profesor incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, "");
+        service.addStudent(student);
+    }
+
+    // TC 12
+    @Test
+    public void addStudentNullProfessorNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume profesor incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, null);
+        service.addStudent(student);
+    }
+
+    // TC 13
+    @Test
+    public void addStudentInvalidProfessorNameTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Nume profesor incorect!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, INVALID_STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // BOUNDARY VALUE ANALYSIS TEST CASES
+    // TC 1
+    @Test
+    public void addStudentGroup0TestSuccess() {
+        int size = getStudentRepositorySize();
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, 0, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        Student potentiallyAddedStudent = service.addStudent(student);
+        assertNull(potentiallyAddedStudent);
+        assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
+
+        Student addedStudent = studentXMLRepository.findOne(STUDENT_ID);
+        assertEquals(STUDENT_ID, addedStudent.getID());
+        assertEquals(STUDENT_NAME, addedStudent.getNume());
+        assertEquals(0, addedStudent.getGrupa());
+        assertEquals(STUDENT_EMAIL, addedStudent.getEmail());
+        assertEquals(STUDENT_PROFESSOR, addedStudent.getProfessor());
+    }
+
+    // TC 2
+    @Test
+    public void addStudentGroupMAXINTTestFailure() {
+        int size = getStudentRepositorySize();
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        Student potentiallyAddedStudent = service.addStudent(student);
+        assertNull(potentiallyAddedStudent);
+        assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
+
+        Student addedStudent = studentXMLRepository.findOne(STUDENT_ID);
+        assertEquals(STUDENT_ID, addedStudent.getID());
+        assertEquals(STUDENT_NAME, addedStudent.getNume());
+        assertEquals(MAX_INT, addedStudent.getGrupa());
+        assertEquals(STUDENT_EMAIL, addedStudent.getEmail());
+        assertEquals(STUDENT_PROFESSOR, addedStudent.getProfessor());
+    }
+
+    // TC 3
+    @Test
+    public void addStudentGroupNegativeTestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Grupa incorecta!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, -1, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+
+    // TC 4
+    @Test
+    public void addStudentGroup1TestFailure() {
+        int size = getStudentRepositorySize();
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        Student potentiallyAddedStudent = service.addStudent(student);
+        assertNull(potentiallyAddedStudent);
+        assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
+
+        Student addedStudent = studentXMLRepository.findOne(STUDENT_ID);
+        assertEquals(STUDENT_ID, addedStudent.getID());
+        assertEquals(STUDENT_NAME, addedStudent.getNume());
+        assertEquals(1, addedStudent.getGrupa());
+        assertEquals(STUDENT_EMAIL, addedStudent.getEmail());
+        assertEquals(STUDENT_PROFESSOR, addedStudent.getProfessor());
+    }
+
+    // TC 5
+    @Test
+    public void addStudentGroupMAXINTMinus1TestFailure() {
+        int size = getStudentRepositorySize();
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT - 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        Student potentiallyAddedStudent = service.addStudent(student);
+        assertNull(potentiallyAddedStudent);
+        assertEquals(size + 1, ((Collection<?>) studentXMLRepository.findAll()).size());
+
+        Student addedStudent = studentXMLRepository.findOne(STUDENT_ID);
+        assertEquals(STUDENT_ID, addedStudent.getID());
+        assertEquals(STUDENT_NAME, addedStudent.getNume());
+        assertEquals(MAX_INT - 1, addedStudent.getGrupa());
+        assertEquals(STUDENT_EMAIL, addedStudent.getEmail());
+        assertEquals(STUDENT_PROFESSOR, addedStudent.getProfessor());
+    }
+
+    // TC 6
+    @Test
+    public void addStudentGroupMAXINTPlus1TestFailure() {
+        exceptionRule.expect(ValidationException.class);
+        exceptionRule.expectMessage("Grupa incorecta!");
+        Student student = new Student(STUDENT_ID, STUDENT_NAME, MAX_INT + 1, STUDENT_EMAIL, STUDENT_PROFESSOR);
+        service.addStudent(student);
+    }
+    
+    int getStudentRepositorySize() {
+        studentXMLRepository.delete(STUDENT_ID);
+        Iterable<Student> students = studentXMLRepository.findAll();
+        return ((Collection<?>) students).size();
+    }
 }

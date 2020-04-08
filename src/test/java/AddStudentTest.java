@@ -21,15 +21,11 @@ import static org.junit.Assert.assertNull;
 
 public class AddStudentTest {
     private String STUDENT_ID = "1";
-    private String INVALID_STUDENT_ID = "";
     private String STUDENT_NAME = "Ana";
     private String INVALID_STUDENT_NAME = "Ana12";
     private int STUDENT_GROUP = 934;
-    private int INVALID_STUDENT_GROUP = -32;
     private String STUDENT_EMAIL = "ana@gmail.com";
-    private String INVALID_STUDENT_EMAIL = "ana";
     private String STUDENT_PROFESSOR = "John";
-    private String INVALID_STUDENT_PROFESSOR = "John12";
     private int MAX_INT = Integer.MAX_VALUE;
 
     StudentValidator studentValidator = new StudentValidator();
@@ -83,6 +79,7 @@ public class AddStudentTest {
     public void addStudentTestFailure() {
         exceptionRule.expect(ValidationException.class);
         exceptionRule.expectMessage("Grupa incorecta!");
+        int INVALID_STUDENT_GROUP = -32;
         Student student = new Student(STUDENT_ID, STUDENT_NAME, INVALID_STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
@@ -92,6 +89,7 @@ public class AddStudentTest {
     public void addStudentEmptyIdTestFailure() {
         exceptionRule.expect(ValidationException.class);
         exceptionRule.expectMessage("Id incorect!");
+        String INVALID_STUDENT_ID = "";
         Student student = new Student(INVALID_STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
@@ -155,6 +153,7 @@ public class AddStudentTest {
     public void addStudentInvalidEmailTestFailure() {
         exceptionRule.expect(ValidationException.class);
         exceptionRule.expectMessage("Email incorect!");
+        String INVALID_STUDENT_EMAIL = "ana";
         Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, INVALID_STUDENT_EMAIL, STUDENT_PROFESSOR);
         service.addStudent(student);
     }
@@ -182,6 +181,7 @@ public class AddStudentTest {
     public void addStudentInvalidProfessorNameTestFailure() {
         exceptionRule.expect(ValidationException.class);
         exceptionRule.expectMessage("Nume profesor incorect!");
+        String INVALID_STUDENT_PROFESSOR = "John12";
         Student student = new Student(STUDENT_ID, STUDENT_NAME, STUDENT_GROUP, STUDENT_EMAIL, INVALID_STUDENT_PROFESSOR);
         service.addStudent(student);
     }
